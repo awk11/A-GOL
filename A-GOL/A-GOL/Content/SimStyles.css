@@ -1,0 +1,269 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: darkgray;
+}
+
+#gameWindow {
+    position: absolute;
+    background: darkgray;
+    margin-top: 20px;
+    margin-left: 240px;
+    display: block;
+    cursor: pointer;
+    width: 75%;
+}
+
+.simForm {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin-top: 325px;
+    float: left;
+    position: absolute;
+}
+
+    .simForm label {
+        left: 15px;
+        margin-bottom: 5px;
+        font-size: 1.2em;
+        float: left;
+        color: white;
+    }
+
+    .simForm input[type=text] {
+        left: 15px;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+#makeSimButton {
+    position: absolute;
+    transition: background-color 0.4s ease;
+    display: block;
+    margin-top: 310px;
+    font-size: 1.2em;
+    max-width: 175px;
+    background-color: #7d7d7d;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    left: 20px;
+    padding: 5px;
+}
+
+#simRestart {
+    position: absolute;
+    transition: background-color 0.4s ease;
+    display: block;
+    top: 275px;
+    font-size: 1.3em;
+    width: 150px;
+    background-color: #7d7d7d;
+    border-radius: 2px;
+    padding: 3px 0px;
+    color: white;
+    text-decoration: none;
+    left: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+    #simRestart:hover {
+        background-color: #d5d5d5;
+    }
+
+#simPauseButton {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 125px;
+    float: left;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+}
+
+#simPauseState {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 112px;
+    float: left;
+    left: 120px;
+    width: 75px;
+    height: 30px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: normal;
+}
+
+#simPaintButton {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 175px;
+    float: left;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+}
+
+#simDrawState {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 162px;
+    float: left;
+    left: 120px;
+    width: 125px;
+    height: 30px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: normal;
+}
+
+#simClearButton {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 225px;
+    float: left;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+}
+
+#makeSimButton:link, .makeSimButton:visited, .makeSimButton:hover, .makeSimButton:active {
+    color: white;
+}
+
+#makeSimButton:hover {
+    transition: background-color 0.4s ease;
+    background-color: #d5d5d5;
+}
+
+#setups {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 360px;
+    left: 15px;
+}
+
+.formSubmit {
+    transition: background-color 0.4s ease;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+    font-size: 1.2em;
+    width: 200px;
+    background-color: #7d7d7d;
+    border-radius: 2px;
+    padding: 3px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+    .formSubmit:link, .formSubmit:visited, .formSubmit:hover, .formSubmit:active {
+        color: white;
+    }
+
+    .formSubmit:hover {
+        transition: background-color 0.4s ease;
+        background-color: #4a949;
+    }
+
+.mainForm {
+    height: 125px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 330px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    background-color: #7d7d7d;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 2px solid #4a949;
+}
+
+    .mainForm h3 {
+        text-align: center;
+    }
+
+    .mainForm label {
+        display: inline-block;
+        width: 100px;
+        margin-right: 10px;
+        text-align: right;
+        font-size: 1.2em;
+    }
+
+#errorMessage {
+    display: none;
+    top: 600px;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    left: 40%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+
+#historyList {
+    width: 10%;
+    float: right;
+    border: 2px solid #7d7d7d;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-right: 25px;
+    background-color: white;
+    max-height: 750px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.historyItem {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 2px solid #7d7d7d;
+    border-radius: 4px;
+    background-color: #7d7d7d;
+    padding: 10px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+    .historyItem:hover {
+        transition: border-color 0.2s ease-out;
+        border-color: rgba(255,255,255, 0.8);
+        transition: background-color 2.6s ease-out;
+        background-color: #d5d5d5;
+    }
+
+h3.emptyHistory {
+    width: 80%;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p.rule {
+    float: left;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: white;
+}

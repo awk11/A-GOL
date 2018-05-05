@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Sim";
+}
+
+@Styles.Render("~/Content/SimStyles.css")
+@Scripts.Render("~/Client Scripts/main.js")
+@Scripts.Render("~/Client Scripts/cell.js")
+<div id="leftControls">
+    <button id="simPauseButton">Pause</button>
+    <button id="simPaintButton">Kill Cells</button>
+    <button id="simClearButton">Clear Sim</button>
+    <h3 id="simPauseState">Playing</h3>
+    <h3 id="simDrawState">Reviving Cells</h3>
+    <a id="simRestart" onclick="clearInterval(app.main.intervalID); app.main.init();" href="#">Restart Current Simulation</a>
+    <select id="setups">
+        <option value=0> Select a Setup</option>
+        <option value=1> Glider Gun Demo</option>
+        <option value=2> Line Pattern Demo</option>
+        <option value=3> So many Blinkers! Demo</option>
+        <option value=4> R-pentomino Demo</option>
+    </select>
+    <form id="simSetupForm" class="simForm" name="simForm" action="/C-GOL" method="POST">
+        <label for="ruleDieL"> Lower bound for Cell Death:</label>
+        <input id="rule1" type="text" name="ruleDieL" placeholder="Cells die with fewer neighbors" value="2" />
+        <label for="ruleDieH">Upper Bound for Cell Death:</label>
+        <input id="rule2" type="text" name="ruleDieH" placeholder="Cells die with more neighbors" value="3" />
+        <label for="ruleBirth"> For Cell revival:</label>
+        <input id="rule3" type="text" name="ruleBirth" placeholder="Cells revive with this many neighbors" value="3" />
+        <input id="simName" type="text" name="name" placeholder="Save Simulation As" />
+        <input type="hidden" name="_csrf" value="#{csrfToken}" />
+        <a id="makeSimButton" href="#"> Save New Simulation</a>
+    </form>
+    <h3 id="simErrorMessage"><span></span></h3>
+</div>
+@if (ViewBag.Sims == null || ViewBag.Sims.Count == 0)
+{
+    <section id="ruleData" data-rule1=2 data-rule2=3 data-rule3=3>
+        <canvas id="gameWindow"></canvas>
+    </section>
+}
+else
+{
+    <section id="ruleData" data-rule1=@ViewBag.Sims[ViewBag.Sims.Count-1].RuleDieL data-rule2=@ViewBag.Sims[ViewBag.Sims.Count-1].RuleDieH data-rule3=@ViewBag.Sims[ViewBag.Sims.Count-1].RuleBirth>
+        <canvas id="gameWindow"></canvas>
+    </section>
+}
+<div id="rightControls">
+    <h2 style="color: white; display: block; margin-top: 125px; margin-left: 1700px;"> Saved Simulations</h2>
+    <section id="historyList">
+        @if (ViewBag.Sims == null || ViewBag.Sims.Count == 0)
+        {
+            <div class="historyItem"><h3 class="emptyHistory">There are no saved simulations</h3></div>
+        }
+        else
+        {
+            foreach (var val in ViewBag.Sims)
+            {
+                <div class="historyItem" onclick="app.main.setup([@String.Join(",",val.DataX)],[@String.Join(",",val.DataY)],@val.RuleDieL,@val.RuleDieH,@val.RuleBirth);"><p class="rule">@val.Name</p></div>
+            }
+        }
+    </section>
+</div>
