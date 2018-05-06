@@ -111,11 +111,9 @@ window.onload = function() {
                 rule3: $("#rule3").val(),
                 name: $('#simName').val()
             },
-            dataType: "json",
-            success: function (result, status, xhr) {
-                $("#simErrorMessage").css({ 'display': 'none' });
-
-                window.location = result.redirect;
+            success: function () {
+                alert("Simulation saved successfully!")
+                location.reload()
             },
             error: function (xhr, status, error) {
                 alert(error);
