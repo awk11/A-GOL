@@ -150,8 +150,8 @@ app.main = {
 	init: function() {
 		//sets up all of the canvas stuff
 		app.main.canvas = document.getElementById("gameWindow");
-		app.main.canvas.width = 1440;//Math.round(window.innerWidth*.75);
-		app.main.canvas.height = 750;//Math.round(window.innerHeight*.8);
+		app.main.canvas.width = 1400;//Math.round(window.innerWidth*.75);
+		app.main.canvas.height = 700;//Math.round(window.innerHeight*.8);
 		//sets up the event listeners for the mouse actions within the canvas
 		app.main.canvas.onmousedown = app.main.doMouseDown;
 		app.main.canvas.onmousemove = app.main.doMouseMove;
@@ -177,7 +177,7 @@ app.main = {
 		//calls the initial update and sets up the inetrval at which to call update in the main loop
 		//simulation updates at 10 fps so user can see changes as they happen in the simulation
 		app.main.update();
-		app.main.intervalID = setInterval(app.main.update, 50);
+		app.main.intervalID = setInterval(app.main.update, 100);
 		
 	},
 	
