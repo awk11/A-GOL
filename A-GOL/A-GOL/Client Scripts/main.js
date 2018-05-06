@@ -69,7 +69,7 @@ window.onload = function() {
 
     //the event listener for the save new simulation button
     //collects all the data about the current state of the 
-    //simulation and sends ti in the proper format to the ajax call function
+    //simulation and sends it in the proper format to the backend through ajax
     document.getElementById("makeSimButton").onclick = function (e) {
         e.preventDefault();
 

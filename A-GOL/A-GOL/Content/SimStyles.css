@@ -63,7 +63,6 @@ html, body {
     width: 150px;
     background-color: #7d7d7d;
     border-radius: 2px;
-    padding: 3px 0px;
     color: white;
     text-decoration: none;
     left: 15px;
@@ -163,7 +162,7 @@ html, body {
     width: 200px;
     background-color: #7d7d7d;
     border-radius: 2px;
-    padding: 3px 0px;
+    padding: 3px 0;
     color: black;
     text-decoration: none;
 }
@@ -174,7 +173,6 @@ html, body {
 
     .formSubmit:hover {
         transition: background-color 0.4s ease;
-        background-color: #4a949;
     }
 
 .mainForm {
@@ -189,7 +187,7 @@ html, body {
     background-color: #7d7d7d;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    border: 2px solid #4a949;
+    border: 2px solid;
 }
 
     .mainForm h3 {
@@ -247,9 +245,8 @@ html, body {
 }
 
     .historyItem:hover {
-        transition: border-color 0.2s ease-out;
+        transition: background-color 0.4s ease;
         border-color: rgba(255,255,255, 0.8);
-        transition: background-color 2.6s ease-out;
         background-color: #d5d5d5;
     }
 

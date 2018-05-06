@@ -79,7 +79,7 @@ namespace A_GOL.Controllers
                 return View(model);
             }
 
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, true, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -87,7 +87,7 @@ namespace A_GOL.Controllers
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, model.RememberMe });
+                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl});
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");

@@ -3,13 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace A_GOL.Models
 {
-    public class ForgotViewModel
-    {
-        [Required]
-        [Display(Name = "Email")]
-        public string Email { get; set; }
-    }
-
     public class LoginViewModel
     {
         [Required]
@@ -20,9 +13,6 @@ namespace A_GOL.Models
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
-
-        [Display(Name = "Remember me?")]
-        public bool RememberMe { get; set; }
     }
 
     public class RegisterViewModel
