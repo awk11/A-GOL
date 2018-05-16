@@ -488,14 +488,14 @@ app.main = {
 			app.main.cells[0][3].isAlive = 1;
 			app.main.cells[0][3].willBeAlive = 1;	
 			
-			app.main.cells[0][146].isAlive = 1;
-			app.main.cells[0][146].willBeAlive = 1;
+			app.main.cells[0][136].isAlive = 1;
+			app.main.cells[0][136].willBeAlive = 1;
 
-			app.main.cells[0][147].isAlive = 1;
-			app.main.cells[0][147].willBeAlive = 1;
+			app.main.cells[0][137].isAlive = 1;
+			app.main.cells[0][137].willBeAlive = 1;
 
-			app.main.cells[0][148].isAlive = 1;
-			app.main.cells[0][148].willBeAlive = 1;
+			app.main.cells[0][138].isAlive = 1;
+			app.main.cells[0][138].willBeAlive = 1;
 			
 			app.main.cells[1][0].isAlive = 1;
 			app.main.cells[1][0].willBeAlive = 1;	
@@ -503,11 +503,11 @@ app.main = {
 			app.main.cells[1][5].isAlive = 1;
 			app.main.cells[1][5].willBeAlive = 1;	
 			
-			app.main.cells[1][144].isAlive = 1;
-			app.main.cells[1][144].willBeAlive = 1;	
+			app.main.cells[1][134].isAlive = 1;
+			app.main.cells[1][134].willBeAlive = 1;	
 			
-			app.main.cells[1][149].isAlive = 1;
-			app.main.cells[1][149].willBeAlive = 1;	
+			app.main.cells[1][139].isAlive = 1;
+			app.main.cells[1][139].willBeAlive = 1;	
 			
 			app.main.cells[2][0].isAlive = 1;
 			app.main.cells[2][0].willBeAlive = 1;	
@@ -515,11 +515,11 @@ app.main = {
 			app.main.cells[2][5].isAlive = 1;
 			app.main.cells[2][5].willBeAlive = 1;	
 			
-			app.main.cells[2][144].isAlive = 1;
-			app.main.cells[2][144].willBeAlive = 1;	
+			app.main.cells[2][134].isAlive = 1;
+			app.main.cells[2][134].willBeAlive = 1;	
 			
-			app.main.cells[2][149].isAlive = 1;
-			app.main.cells[2][149].willBeAlive = 1;	
+			app.main.cells[2][139].isAlive = 1;
+			app.main.cells[2][139].willBeAlive = 1;	
 			
 			app.main.cells[3][0].isAlive = 1;
 			app.main.cells[3][0].willBeAlive = 1;	
@@ -527,11 +527,11 @@ app.main = {
 			app.main.cells[3][5].isAlive = 1;
 			app.main.cells[3][5].willBeAlive = 1;	
 			
-			app.main.cells[3][144].isAlive = 1;
-			app.main.cells[3][144].willBeAlive = 1;	
+			app.main.cells[3][134].isAlive = 1;
+			app.main.cells[3][134].willBeAlive = 1;	
 			
-			app.main.cells[3][149].isAlive = 1;
-			app.main.cells[3][149].willBeAlive = 1;	
+			app.main.cells[3][139].isAlive = 1;
+			app.main.cells[3][139].willBeAlive = 1;	
 			
 			app.main.cells[5][1].isAlive = 1;
 			app.main.cells[5][1].willBeAlive = 1;	
@@ -545,14 +545,14 @@ app.main = {
 			app.main.cells[5][3].isAlive = 1;
 			app.main.cells[5][3].willBeAlive = 1;	
 			
-			app.main.cells[5][146].isAlive = 1;
-			app.main.cells[5][146].willBeAlive = 1;
+			app.main.cells[5][136].isAlive = 1;
+			app.main.cells[5][136].willBeAlive = 1;
 
-			app.main.cells[5][147].isAlive = 1;
-			app.main.cells[5][147].willBeAlive = 1;
+			app.main.cells[5][137].isAlive = 1;
+			app.main.cells[5][137].willBeAlive = 1;
 
-			app.main.cells[5][148].isAlive = 1;
-			app.main.cells[5][148].willBeAlive = 1;
+			app.main.cells[5][138].isAlive = 1;
+			app.main.cells[5][138].willBeAlive = 1;
 			
 			app.main.cells[29][23].isAlive = 1;
 			app.main.cells[29][23].willBeAlive = 1;
@@ -818,77 +818,77 @@ app.main = {
 			app.main.cells[176][77].isAlive = 1;
 			app.main.cells[176][77].willBeAlive = 1;
 			
-			app.main.cells[282][1].isAlive = 1;
-			app.main.cells[282][1].willBeAlive = 1;
+			app.main.cells[274][1].isAlive = 1;
+			app.main.cells[274][1].willBeAlive = 1;
+
+			app.main.cells[274][2].isAlive = 1;
+			app.main.cells[274][2].willBeAlive = 1;
+
+			app.main.cells[274][3].isAlive = 1;
+			app.main.cells[274][3].willBeAlive = 1;
+
+			app.main.cells[274][136].isAlive = 1;
+			app.main.cells[274][136].willBeAlive = 1;
+
+			app.main.cells[274][137].isAlive = 1;
+			app.main.cells[274][137].willBeAlive = 1;
+
+			app.main.cells[274][138].isAlive = 1;
+			app.main.cells[274][138].willBeAlive = 1;
 			
-			app.main.cells[282][2].isAlive = 1;
-			app.main.cells[282][2].willBeAlive = 1;
+			app.main.cells[276][0].isAlive = 1;
+			app.main.cells[276][0].willBeAlive = 1;
+
+			app.main.cells[276][5].isAlive = 1;
+			app.main.cells[276][5].willBeAlive = 1;
+
+			app.main.cells[276][134].isAlive = 1;
+			app.main.cells[276][134].willBeAlive = 1;
+
+			app.main.cells[276][139].isAlive = 1;
+			app.main.cells[276][139].willBeAlive = 1;
 			
-			app.main.cells[282][3].isAlive = 1;
-			app.main.cells[282][3].willBeAlive = 1;
+			app.main.cells[277][0].isAlive = 1;
+			app.main.cells[277][0].willBeAlive = 1;
+
+			app.main.cells[277][5].isAlive = 1;
+			app.main.cells[277][5].willBeAlive = 1;
+
+			app.main.cells[277][134].isAlive = 1;
+			app.main.cells[277][134].willBeAlive = 1;
+
+			app.main.cells[277][139].isAlive = 1;
+			app.main.cells[277][139].willBeAlive = 1;
 			
-			app.main.cells[282][146].isAlive = 1;
-			app.main.cells[282][146].willBeAlive = 1;
+			app.main.cells[278][0].isAlive = 1;
+			app.main.cells[278][0].willBeAlive = 1;
+
+			app.main.cells[278][5].isAlive = 1;
+			app.main.cells[278][5].willBeAlive = 1;
+
+			app.main.cells[278][134].isAlive = 1;
+			app.main.cells[278][134].willBeAlive = 1;
+
+			app.main.cells[278][139].isAlive = 1;
+			app.main.cells[278][139].willBeAlive = 1;
+
+			app.main.cells[279][1].isAlive = 1;
+			app.main.cells[279][1].willBeAlive = 1;
+
+			app.main.cells[279][2].isAlive = 1;
+			app.main.cells[279][2].willBeAlive = 1;
 			
-			app.main.cells[282][147].isAlive = 1;
-			app.main.cells[282][147].willBeAlive = 1;
+			app.main.cells[279][3].isAlive = 1;
+			app.main.cells[279][3].willBeAlive = 1;
+			                
+			app.main.cells[279][136].isAlive = 1;
+			app.main.cells[279][136].willBeAlive = 1;
 			
-			app.main.cells[282][148].isAlive = 1;
-			app.main.cells[282][148].willBeAlive = 1;
+			app.main.cells[279][137].isAlive = 1;
+			app.main.cells[279][137].willBeAlive = 1;
 			
-			app.main.cells[284][0].isAlive = 1;
-			app.main.cells[284][0].willBeAlive = 1;
-			
-			app.main.cells[284][5].isAlive = 1;
-			app.main.cells[284][5].willBeAlive = 1;
-			
-			app.main.cells[284][144].isAlive = 1;
-			app.main.cells[284][144].willBeAlive = 1;
-			
-			app.main.cells[284][149].isAlive = 1;
-			app.main.cells[284][149].willBeAlive = 1;
-			
-			app.main.cells[285][0].isAlive = 1;
-			app.main.cells[285][0].willBeAlive = 1;
-			
-			app.main.cells[285][5].isAlive = 1;
-			app.main.cells[285][5].willBeAlive = 1;
-			
-			app.main.cells[285][144].isAlive = 1;
-			app.main.cells[285][144].willBeAlive = 1;
-			
-			app.main.cells[285][149].isAlive = 1;
-			app.main.cells[285][149].willBeAlive = 1;
-			
-			app.main.cells[286][0].isAlive = 1;
-			app.main.cells[286][0].willBeAlive = 1;
-			
-			app.main.cells[286][5].isAlive = 1;
-			app.main.cells[286][5].willBeAlive = 1;
-			
-			app.main.cells[286][144].isAlive = 1;
-			app.main.cells[286][144].willBeAlive = 1;
-			
-			app.main.cells[286][149].isAlive = 1;
-			app.main.cells[286][149].willBeAlive = 1;
-			
-			app.main.cells[287][1].isAlive = 1;
-			app.main.cells[287][1].willBeAlive = 1;
-			
-			app.main.cells[287][2].isAlive = 1;
-			app.main.cells[287][2].willBeAlive = 1;
-			
-			app.main.cells[287][3].isAlive = 1;
-			app.main.cells[287][3].willBeAlive = 1;
-			
-			app.main.cells[287][146].isAlive = 1;
-			app.main.cells[287][146].willBeAlive = 1;
-			
-			app.main.cells[287][147].isAlive = 1;
-			app.main.cells[287][147].willBeAlive = 1;
-			
-			app.main.cells[287][148].isAlive = 1;
-			app.main.cells[287][148].willBeAlive = 1;
+			app.main.cells[279][138].isAlive = 1;
+			app.main.cells[279][138].willBeAlive = 1;
 		}
 		else if(type == 4) {	//the r-pentomino demo
 		
