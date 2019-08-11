@@ -49,22 +49,36 @@ window.onload = function() {
     //automatically updates rule 1 (the lower limit for survival) as the player changes it
     document.getElementById("rule1").onchange = function (e) {
         e.preventDefault();
-
-        app.main.rule1 = e.target.value;
+        if (isNaN(e.target.value)) {
+            e.target.value = app.main.rule1;
+        }
+        else {
+            app.main.rule1 = e.target.value;
+        }
     };
 
     //automatically updates rule 2 (the upper limit for survival) as the player changes it
     document.getElementById("rule2").onchange = function (e) {
         e.preventDefault();
 
-        app.main.rule2 = e.target.value;
+        if (isNaN(e.target.value)) {
+            e.target.value = app.main.rule2;
+        }
+        else {
+            app.main.rule2 = e.target.value;
+        }
     };
 
     //automatically updates rule 3 (the amount of neighbors for revival) as the player changes it
     document.getElementById("rule3").onchange = function (e) {
         e.preventDefault();
 
-        app.main.rule3 =e.target.value;
+        if (isNaN(e.target.value)) {
+            e.target.value = app.main.rule3;
+        }
+        else {
+            app.main.rule3 = e.target.value;
+        }
     };
 
     //the event listener for the save new simulation button
@@ -76,6 +90,12 @@ window.onload = function() {
         //makes sure the rules are logical
         if ($("#rule1").val() > $("#rule2").val()) {
             alert("Lower bound must be less than upper bound");
+            return false;
+        }
+
+        console.log($("#rule1").val() + " | " + $("#rule2").val() + " | " + $("#rule3").val())
+        if (isNaN($("#rule1").val()) || isNaN($("#rule2").val()) || isNaN($("#rule3").val())) {
+            alert("All rules must be numbers");
             return false;
         }
 
@@ -123,11 +143,6 @@ window.onload = function() {
         return false;
     };
 };
-
-
-function sendAjax(action, data) {
-    
-}
 
 //the main 'class', most of everything is in here
 app.main = {
